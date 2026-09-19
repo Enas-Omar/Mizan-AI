@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "name": "Mizan AI Golden Evaluation Set",
+    "version": "1.0.0",
+    "purpose": "تقييم مستقل لجودة الاسترجاع والإجابات ودقة الرفض",
+    "leakage_policy": {
+      "rule": "هذه المجموعة تحتوي أسئلة ومراجع توسيم (doc_id + رقم مادة) فقط. لا يحتوي الملف على أي نص مستخرج من المتن (corpus text). الأسئلة كُتبت يدوياً بمعزل عن مخرجات النظام، والتوسيم تم بقراءة بشرية للمتن المرجعي (annotator access) وليس باسترجاع آلي.",
+      "corpus_isolation": "لا يجوز استخدام أسئلة هذه المجموعة في أي مرحلة بناء أو ضبط للفهرس، ويجب أن يبقى المتن مجمداً (frozen corpus) أثناء التقييم.",
+      "split_rule": "أي أسئلة جديدة للتطوير/الضبط توضع في golden_set_dev.json ولا تمس هذا الملف الذي يبقى held-out."
+    },
+    "expected_behavior_values": ["answer", "refuse_out_of_scope", "refuse_no_answer"],
+    "labeling": "توسيم بشري مقابل نص القوانين في data/ (فحص نص المادة المستهدفة فعلياً قبل التوسيم)"
+  },
+  "answer_rows": [
+    {"id": "G01", "query": "ما هي مدة الإجازة السنوية؟", "type": "legal_concept", "expected": [{"doc_id": "LAW_12_2010", "article": "30"}], "notes": "30 يوماً و45 لمن تجاوز الخمسين"},
+    {"id": "G02", "query": "كم عدد ساعات العمل الأسبوعية المسموح بها؟", "type": "legal_concept", "expected": [{"doc_id": "LAW_12_2010", "article": "13"}], "notes": "48 ساعة أسبوعياً"},
+    {"id": "G03", "query": "ما مدة إجازة الأمومة للمرأة العاملة؟", "type": "legal_concept", "expected": [{"doc_id": "LAW_12_2010", "article": "25"}], "notes": "14 أسبوعاً"},
+    {"id": "G04", "query": "اشتغلت في يوم راحتي الأسبوعية شن حقي؟", "type": "dialect", "expected": [{"doc_id": "LAW_12_2010", "article": "16"}], "notes": "يوم بديل خلال ثلاثة أيام"},
+    {"id": "G05", "query": "فصلوني من العمل بغير مبرر شن أحقيتي؟", "type": "dialect", "expected": [{"doc_id": "LAW_12_2010", "article": "107"}], "notes": "طلب إيقاف الفصل من مكتب التشغيل"},
+    {"id": "G06", "query": "هل يجوز لجهة العمل إنهاء العقد دون إنذار مسبق؟", "type": "legal_concept", "expected": [{"doc_id": "LAW_12_2010", "article": "73"}], "notes": "الحالات المسموح فيها"},
+    {"id": "G07", "query": "للعامل الحق في إجازة لأداء فريضة الحج؟", "type": "legal_concept", "expected": [{"doc_id": "LAW_12_2010", "article": "34"}], "notes": "إجازة خاصة بمرتب كامل"},
+    {"id": "G08", "query": "ما هو تعريف عقد البيع في القانون المدني؟", "type": "article_reference", "expected": [{"doc_id": "CIVIL_CODE", "article": "407"}], "notes": "تعريف البيع"},
+    {"id": "G09", "query": "من يعتبر مرتكبا لجريمة غسل الأموال؟", "type": "legal_concept", "expected": [{"doc_id": "ANTI_MONEY_LAUNDERING_2_2005", "article": "2"}], "notes": "المادة (الثانية)"},
+    {"id": "G10", "query": "هل يجوز التعامل بالفوائد الربوية في المعاملات المدنية والتجارية؟", "type": "legal_concept", "expected": [{"doc_id": "USURY_LAW_1_2013", "article": "1"}], "notes": "منع الفوائد"},
+    {"id": "G11", "query": "متى يجب القيد في السجل التجاري بالنسبة للشركات؟", "type": "legal_concept", "expected": [{"doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010", "article": "24"}], "notes": "القيد في السجل التجاري"},
+    {"id": "G12", "query": "كيف تقدر المصلحة دخل فروع الشركات الأجنبية؟", "type": "legal_concept", "expected": [{"doc_id": "INCOME_TAX_LAW_7_2010", "article": "67"}], "notes": "نسبة من الإيراد الكلي"}
+  ],
+  "refusal_rows": [
+    {"id": "R01", "query": "من فاز بمباراة أمس؟", "expected_behavior": "refuse_out_of_scope", "notes": "رياضة"},
+    {"id": "R02", "query": "ما أفضل مدرسة في ليبيا؟", "expected_behavior": "refuse_out_of_scope", "notes": "غير قانوني"},
+    {"id": "R03", "query": "هل يجوز تحويل المعاش التقاعدي للورثة المقيمين خارج ليبيا؟", "expected_behavior": "refuse_no_answer", "notes": "قانوني الصياغة ويمر ببوابة النطاق (معاش/تقاعد/ورثة)، والمتن لا يغطي تفاصيله — الرفض يصدر من بوابات الملاءمة لا بوابة النطاق. تحقق يدوياً قبل التوسيم."},
+    {"id": "R04", "query": "ما جدول مواعيد الرحلات الجوية؟", "expected_behavior": "refuse_out_of_scope", "notes": "معلومات خدمة"}
+  ]
+}
