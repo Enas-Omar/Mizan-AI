@@ -1,0 +1,664 @@
+{
+  "run_at_utc": "2026-09-19T16:22:33.114727+00:00",
+  "corpus_frozen": true,
+  "gold_set_version": "1.0.0",
+  "retrieval": {
+    "recall_at_1": 0.75,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 0.861,
+    "n_rows": 12,
+    "per_row": [
+      {
+        "id": "G01",
+        "query": "ما هي مدة الإجازة السنوية؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "30"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "33",
+            "dense_score": 0.8619,
+            "bm25_score": 11.31
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "30",
+            "dense_score": 0.8807,
+            "bm25_score": 8.18
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "31",
+            "dense_score": 0.8516,
+            "bm25_score": 8.45
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "160",
+            "dense_score": 0.8341,
+            "bm25_score": 5.55
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "158",
+            "dense_score": 0.8209,
+            "bm25_score": 10.29
+          }
+        ],
+        "first_hit_rank": 2
+      },
+      {
+        "id": "G02",
+        "query": "كم عدد ساعات العمل الأسبوعية المسموح بها؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "13"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "28",
+            "dense_score": 0.8521,
+            "bm25_score": 14.66
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "57",
+            "dense_score": 0.8398,
+            "bm25_score": 15.88
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "13",
+            "dense_score": 0.8536,
+            "bm25_score": 12.16
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "17",
+            "dense_score": 0.8457,
+            "bm25_score": 11.7
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "14",
+            "dense_score": 0.8721,
+            "bm25_score": 9.18
+          }
+        ],
+        "first_hit_rank": 3
+      },
+      {
+        "id": "G03",
+        "query": "ما مدة إجازة الأمومة للمرأة العاملة؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "25"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "25",
+            "dense_score": 0.8962,
+            "bm25_score": 20.51
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "34",
+            "dense_score": 0.8521,
+            "bm25_score": 16.25
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "54",
+            "dense_score": 0.8353,
+            "bm25_score": 8.13
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "35",
+            "dense_score": 0.8193,
+            "bm25_score": 7.04
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "33",
+            "dense_score": 0.831,
+            "bm25_score": 6.12
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G04",
+        "query": "اشتغلت في يوم راحتي الأسبوعية شن حقي؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "16"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "14",
+            "dense_score": 0.8312,
+            "bm25_score": 12.25
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "16",
+            "dense_score": 0.829,
+            "bm25_score": 8.05
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "923",
+            "dense_score": 0.8065,
+            "bm25_score": 8.82
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "28",
+            "dense_score": 0.806,
+            "bm25_score": 8.21
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "957",
+            "dense_score": 0.802,
+            "bm25_score": 9.2
+          }
+        ],
+        "first_hit_rank": 2
+      },
+      {
+        "id": "G05",
+        "query": "فصلوني من العمل بغير مبرر شن أحقيتي؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "107"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "107",
+            "dense_score": 0.8568,
+            "bm25_score": 11.05
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "76",
+            "dense_score": 0.8532,
+            "bm25_score": 11.18
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "174",
+            "dense_score": 0.8534,
+            "bm25_score": 9.59
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "36",
+            "dense_score": 0.8421,
+            "bm25_score": 10.14
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "75",
+            "dense_score": 0.8692,
+            "bm25_score": 6.27
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G06",
+        "query": "هل يجوز لجهة العمل إنهاء العقد دون إنذار مسبق؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "73"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "73",
+            "dense_score": 0.8927,
+            "bm25_score": 21.85
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "72",
+            "dense_score": 0.8983,
+            "bm25_score": 17.76
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "96",
+            "dense_score": 0.8871,
+            "bm25_score": 21.44
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "77",
+            "dense_score": 0.8844,
+            "bm25_score": 20.92
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "75",
+            "dense_score": 0.8898,
+            "bm25_score": 15.84
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G07",
+        "query": "للعامل الحق في إجازة لأداء فريضة الحج؟",
+        "expected": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "34"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "34",
+            "dense_score": 0.9014,
+            "bm25_score": 29.09
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "33",
+            "dense_score": 0.8541,
+            "bm25_score": 14.66
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "25",
+            "dense_score": 0.8377,
+            "bm25_score": 14.03
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "31",
+            "dense_score": 0.856,
+            "bm25_score": 8.42
+          },
+          {
+            "doc_id": "LAW_12_2010",
+            "article": "35",
+            "dense_score": 0.8359,
+            "bm25_score": 9.34
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G08",
+        "query": "ما هو تعريف عقد البيع في القانون المدني؟",
+        "expected": [
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "407"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "407",
+            "dense_score": 0.8962,
+            "bm25_score": 15.59
+          },
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "475",
+            "dense_score": 0.8641,
+            "bm25_score": 10.31
+          },
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "408",
+            "dense_score": 0.8537,
+            "bm25_score": 10.66
+          },
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "410",
+            "dense_score": 0.8514,
+            "bm25_score": 11.28
+          },
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "451",
+            "dense_score": 0.8554,
+            "bm25_score": 10.06
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G09",
+        "query": "من يعتبر مرتكبا لجريمة غسل الأموال؟",
+        "expected": [
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "2"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "2",
+            "dense_score": 0.8708,
+            "bm25_score": 15.25
+          },
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "6",
+            "dense_score": 0.8386,
+            "bm25_score": 12.48
+          },
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "5",
+            "dense_score": 0.8517,
+            "bm25_score": 9.84
+          },
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "11",
+            "dense_score": 0.8365,
+            "bm25_score": 10.23
+          },
+          {
+            "doc_id": "ANTI_MONEY_LAUNDERING_2_2005",
+            "article": "9",
+            "dense_score": 0.8286,
+            "bm25_score": 10.65
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G10",
+        "query": "هل يجوز التعامل بالفوائد الربوية في المعاملات المدنية والتجارية؟",
+        "expected": [
+          {
+            "doc_id": "USURY_LAW_1_2013",
+            "article": "1"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "USURY_LAW_1_2013",
+            "article": "1",
+            "dense_score": 0.8958,
+            "bm25_score": 30.3
+          },
+          {
+            "doc_id": "USURY_LAW_1_2013",
+            "article": "5",
+            "dense_score": 0.8841,
+            "bm25_score": 30.7
+          },
+          {
+            "doc_id": "USURY_LAW_1_2013",
+            "article": "2",
+            "dense_score": 0.8952,
+            "bm25_score": 22.97
+          },
+          {
+            "doc_id": "CIVIL_CODE",
+            "article": "235",
+            "dense_score": 0.8882,
+            "bm25_score": 14.55
+          },
+          {
+            "doc_id": "USURY_LAW_1_2013",
+            "article": "8",
+            "dense_score": 0.8559,
+            "bm25_score": 15.21
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G11",
+        "query": "متى يجب القيد في السجل التجاري بالنسبة للشركات؟",
+        "expected": [
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "24"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "24",
+            "dense_score": 0.8944,
+            "bm25_score": 14.24
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "1331",
+            "dense_score": 0.8783,
+            "bm25_score": 13.22
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "26",
+            "dense_score": 0.8706,
+            "bm25_score": 14.74
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "485",
+            "dense_score": 0.8759,
+            "bm25_score": 12.73
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "494",
+            "dense_score": 0.8714,
+            "bm25_score": 12.71
+          }
+        ],
+        "first_hit_rank": 1
+      },
+      {
+        "id": "G12",
+        "query": "كيف تقدر المصلحة دخل فروع الشركات الأجنبية؟",
+        "expected": [
+          {
+            "doc_id": "INCOME_TAX_LAW_7_2010",
+            "article": "67"
+          }
+        ],
+        "retrieved_top5": [
+          {
+            "doc_id": "INCOME_TAX_LAW_7_2010",
+            "article": "67",
+            "dense_score": 0.8748,
+            "bm25_score": 18.29
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "375",
+            "dense_score": 0.8766,
+            "bm25_score": 10.1
+          },
+          {
+            "doc_id": "COMMERCIAL_ACTIVITY_LAW_23_2010",
+            "article": "1197",
+            "dense_score": 0.8604,
+            "bm25_score": 10.5
+          },
+          {
+            "doc_id": "INCOME_TAX_REGULATION_592_2010",
+            "article": "2",
+            "dense_score": 0.8425,
+            "bm25_score": 11.98
+          },
+          {
+            "doc_id": "INCOME_TAX_LAW_7_2010",
+            "article": "68",
+            "dense_score": 0.8368,
+            "bm25_score": 6.46
+          }
+        ],
+        "first_hit_rank": 1
+      }
+    ]
+  },
+  "citations": {
+    "grounded_answer_rate": 0.75,
+    "citation_completeness": 0.75,
+    "citation_correctness_top1": 0.667,
+    "n_rows": 12,
+    "per_row": [
+      {
+        "id": "G01",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": false,
+        "n_citations": 3,
+        "confidence": 0.865
+      },
+      {
+        "id": "G02",
+        "grounded": false,
+        "citation_complete": false,
+        "top_citation_correct": false,
+        "n_citations": 0,
+        "confidence": 0
+      },
+      {
+        "id": "G03",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.873
+      },
+      {
+        "id": "G04",
+        "grounded": false,
+        "citation_complete": false,
+        "top_citation_correct": false,
+        "n_citations": 0,
+        "confidence": 0
+      },
+      {
+        "id": "G05",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.855
+      },
+      {
+        "id": "G06",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.893
+      },
+      {
+        "id": "G07",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.877
+      },
+      {
+        "id": "G08",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.88
+      },
+      {
+        "id": "G09",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.859
+      },
+      {
+        "id": "G10",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.893
+      },
+      {
+        "id": "G11",
+        "grounded": true,
+        "citation_complete": true,
+        "top_citation_correct": true,
+        "n_citations": 3,
+        "confidence": 0.886
+      },
+      {
+        "id": "G12",
+        "grounded": false,
+        "citation_complete": false,
+        "top_citation_correct": false,
+        "n_citations": 0,
+        "confidence": 0
+      }
+    ]
+  },
+  "refusals": {
+    "refusal_accuracy": 1.0,
+    "n_rows": 4,
+    "per_row": [
+      {
+        "id": "R01",
+        "expected": "refuse_out_of_scope",
+        "got": "refuse_out_of_scope",
+        "pass": true
+      },
+      {
+        "id": "R02",
+        "expected": "refuse_out_of_scope",
+        "got": "refuse_out_of_scope",
+        "pass": true
+      },
+      {
+        "id": "R03",
+        "expected": "refuse_no_answer",
+        "got": "refuse_no_answer",
+        "pass": true
+      },
+      {
+        "id": "R04",
+        "expected": "refuse_out_of_scope",
+        "got": "refuse_out_of_scope",
+        "pass": true
+      }
+    ]
+  }
+}
