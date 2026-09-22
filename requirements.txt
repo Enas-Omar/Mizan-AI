@@ -10,4 +10,4 @@ pymupdf>=1.24.0
 pillow>=10.0.0
 tqdm>=4.66.0
 # Windows Media OCR — required by scripts/step2_extract.py for scanned PDFs
-winocr>=0.1.6; sys_platform == "win32"
+#  winocr>=0.1.6; sys_platform == "win32"
