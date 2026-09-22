@@ -608,7 +608,23 @@ class MizanAssistant:
             "confidence": _compute_confidence(sources),
             "no_match": False,
         }
-
+    def chat(
+        self,
+        query: str,
+        top_k: int = 3,
+        mode: str = None,
+        filters: dict = None,
+        chat_history: list[dict] = None,
+        **kwargs,
+    ) -> dict:
+        """Backwards-compatible alias for answer_question used by UI frontends."""
+        return self.answer_question(
+            query=query,
+            top_k=top_k,
+            mode=mode,
+            filters=filters,
+            chat_history=chat_history,
+        )
 
 # Backwards-compatible alias
 LibyanLawAssistant = MizanAssistant
